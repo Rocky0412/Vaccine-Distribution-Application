@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+
+const adminSchema=mongoose.Schema({
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+	email:{type:String,required:[true,"email is required"],unique:true},
+	password:{type:String,required:[true,"Password is require"]}
+
+},{timestamp:true})
+
+module.exports=mongoose.model('admin',adminSchema);
